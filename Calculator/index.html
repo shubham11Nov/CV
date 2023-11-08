@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div>
+      <input type="text" id="ansInput" class="ansInput">
+      <input type="button" value="AC" id="clr" onclick="clearValues()">
+    </div>
+
+    <div class="btns">
+      <input type="button" value="7" onclick="inputUpdate('7')">
+      <input type="button" value="8" onclick="inputUpdate('8')">
+      <input type="button" value="9" onclick="inputUpdate('9')">
+      <input type="button" value="/" id="div" onclick="inputUpdate('/')">
+    </div>
+
+    <div class="btns">
+      <input type="button" value="4" onclick="inputUpdate('4')">
+      <input type="button" value="5" onclick="inputUpdate('5')">
+      <input type="button" value="6" onclick="inputUpdate('6')">
+      <input type="button" value="*" id="mul" onclick="inputUpdate('*')">
+    </div>
+
+    <div class="btns">
+      <input type="button" value="1" onclick="inputUpdate('1')">
+      <input type="button" value="2" onclick="inputUpdate('2')">
+      <input type="button" value="3" onclick="inputUpdate('3')">
+      <input type="button" value="-" id="sub" onclick="inputUpdate('-')">
+    </div>
+
+    <div class="btns">
+      <input type="button" value="0" onclick="inputUpdate('0')">
+      <input type="button" value="." onclick="inputUpdate('.')">
+
+      <input type="button" value="=" onclick="Calc()">
+      <input type="button" value="+" id="add" onclick="inputUpdate('+')">
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="survey-form">
+        <h2 class="form-title">Survey Information</h2>
+        <form action="" class="form">
+
+            <div class="form-elements">
+                <div class="form-element">
+                    <label for="fname" class="label">First Name <span class="redStar">*</span></label>
+                    <input type="text" name="fname" id="fname" class="input">
+                </div>
+
+                <div class="form-element">
+                    <label for="lname" class="label">Last Name <span class="redStar">*</span></label>
+                    <input type="text" name="lname" id="lname" class="input">
+                </div>
+
+                <div class="form-element">
+                    <label for="dob" class="label">Date of Birth <span class="redStar">*</span></label>
+                    <input type="date" name="dob" id="dob" class="input">
+                </div>
+
+                <div class="form-element">
+                    <label for="country" class="label">Country <span class="redStar">*</span></label>
+                    <select name="country" id="country" class="input">
+                        <option value="India">India</option>
+                        <option value="Norway">Norway</option>
+                        <option value="Iceland">Iceland</option>
+                    </select>
+                </div>
+
+                <div class="form-element">
+                    <label class="label">Gender <span class="redStar">*</span></label>
+
+                    <div class="radio">
+                        <div>
+                            <input type="radio" name="radioBtn" id="radioMale" value="male">
+                            <label for="radioMale" class="label">Male</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="radioBtn" id="radioFemale" value="frmale">
+                            <label for="radioFemale" class="label">Female</label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <label for="profession" class="label">Profession <span class="redStar">*</span></label>
+                    <input type="text" name="profession" id="profession" class="input">
+                </div>
+
+                <div class="form-element">
+                    <label for="email" class="label">Email <span class="redStar">*</span></label>
+                    <input type="email" name="email" id="email" class="input">
+                </div>
+                <div class="form-element">
+                    <label for="mobilenum" class="label">Mobile Number <span class="redStar">*</span></label>
+                    <input required type="number" name="mobilenum" id="mobilenum" class="input">
+                </div>
+            </div>
+            <p class="warning" id="warning">Warning</p>
+            <div class="form-btns">
+                <button id="btnSubmit" class="btn-submit">Submit</button>
+                <button id="btnReset" class="btn-reset">Reset</button>
+            </div>
+
+        </form>
+    </div>
+    <div class="opacity-layer" id="opacity_layer">
+        <div class="survey-info">
+            <i id="closePopup" class="fa-solid fa-circle-xmark"></i>
+            <h2>Survey Information</h2>
+            <div class="survey-info-elements">
+
+                <p>Name : <span id="nameSpan"></span></p>
+                <p>Date of birth : <span id="dobSpan"></span></p>
+                <p>Country : <span id="countrySpan"></span></p>
+                <p>Gender : <span id="genderSpan"></span></p>
+                <p>Profession : <span id="professionSpan"></span></p>
+                <p>Email : <span id="emailSpan"></span></p>
+                <p>Mobile Number : <span id="mobileNumberSpan"></span></p>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ede3fd;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+input {
+  outline: none;
+  background-color: #fff;
+  border: none;
+}
+
+.container {}
+
+#clr {
+  background-color: #ffabb2;
+}
+
+.container input {
+  width: 2rem;
+  height: 2rem;
+}
+
+.ansInput {
+  width: 7.4rem !important;
+  padding: 0rem 0.5rem;
+}
+
+.btns {
+  width: 10rem;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
